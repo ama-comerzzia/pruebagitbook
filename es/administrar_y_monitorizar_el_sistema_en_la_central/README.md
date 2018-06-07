@@ -1,0 +1,1 @@
+# ADMINISTRAR Y MONITORIZAR EL SISTEMA EN LA CENTRAL {#administrar-y-monitorizar-el-sistema-en-la-central}

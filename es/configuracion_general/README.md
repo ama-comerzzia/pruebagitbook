@@ -1,0 +1,1 @@
+# CONFIGURACIÓN GENERAL {#configuraci-n-general}

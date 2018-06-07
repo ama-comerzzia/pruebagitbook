@@ -1,16 +1,8 @@
 # Administracion {#administracion}
 
-# Languages
-
-* [English](en/)
-* [French](fr/)
-* [Español](es/)
-
-
-
 Manual de Administración
 
-de comerzziaxxxxxxxxxxxxxxxxxxxxxx
+de comerzzia EN README ... con pdf???
 
 Tabla de contenidos
 
@@ -54,7 +46,7 @@ Tabla de contenidos
 
 3.2.2. Atributos de Usuario 19
 
-3.2.3. Alta \/ Edición \/ Consulta de un Usuario 20
+3.2.3. Alta / Edición / Consulta de un Usuario 20
 
 3.2.4. Restablecer contraseña 20
 
@@ -88,9 +80,9 @@ Tabla de contenidos
 
 4.2.3. Mantenimiento de Cuadro de Impuestos 31
 
-[4.2.4. ](export/gestion_de_datos_maestros/configuracion_de_impuestos.md#portugal-comunicaci-n-anual-de-las-facturas-emitidas-saft-pt)[\[](export/gestion_de_datos_maestros/configuracion_de_impuestos.md#portugal-comunicaci-n-anual-de-las-facturas-emitidas-saft-pt)[PORTUGAL\]](export/gestion_de_datos_maestros/configuracion_de_impuestos.md#portugal-comunicaci-n-anual-de-las-facturas-emitidas-saft-pt)[Comunicación Anual de las facturas emitidas \(SAFT-PT\) 32](export/gestion_de_datos_maestros/configuracion_de_impuestos.md#portugal-comunicaci-n-anual-de-las-facturas-emitidas-saft-pt)
+[4.2.4. [PORTUGAL]Comunicación Anual de las facturas emitidas (SAFT-PT) 32](export/gestion_de_datos_maestros/configuracion_de_impuestos.md#portugal-comunicaci-n-anual-de-las-facturas-emitidas-saft-pt)
 
-[4.2.5. ](export/gestion_de_datos_maestros/configuracion_de_impuestos.md#portugal-comunicaci-n-mensual-de-las-facturas-emitidas-saft-pt)[\[](export/gestion_de_datos_maestros/configuracion_de_impuestos.md#portugal-comunicaci-n-mensual-de-las-facturas-emitidas-saft-pt)[PORTUGAL\]](export/gestion_de_datos_maestros/configuracion_de_impuestos.md#portugal-comunicaci-n-mensual-de-las-facturas-emitidas-saft-pt)[Comunicación Mensual de las facturas emitidas \(SAFT-PT\) 33](export/gestion_de_datos_maestros/configuracion_de_impuestos.md#portugal-comunicaci-n-mensual-de-las-facturas-emitidas-saft-pt)
+[4.2.5. [PORTUGAL]Comunicación Mensual de las facturas emitidas (SAFT-PT) 33](export/gestion_de_datos_maestros/configuracion_de_impuestos.md#portugal-comunicaci-n-mensual-de-las-facturas-emitidas-saft-pt)
 
 [4.3.Configuración de la Tesorería 33](export/gestion_de_datos_maestros/configuracion_de_la_tesoreria.md)
 
@@ -128,7 +120,7 @@ Tabla de contenidos
 
 4.5.5. Mantenimiento de Conceptos de Almacenes para Compras 73
 
-4.6.Configuración de Terceros \(Clientes-Proveedores\) 75
+4.6.Configuración de Terceros (Clientes-Proveedores) 75
 
 4.6.1. Mantenimiento de Sectores 75
 
@@ -148,11 +140,11 @@ Tabla de contenidos
 
 [6.ADMINISTRAR Y MONITORIZAR EL SISTEMA EN LA CENTRAL 89](export/administrar_y_monitorizar_el_sistema_en_la_central/README.md)
 
-6.1.Administración del Sistema\/Sincronizador\/Procesador de Datos 89
+6.1.Administración del Sistema/Sincronizador/Procesador de Datos 89
 
 6.2.Estadísticas de uso 91
 
-[6.3.Bus de Integración \(ESB\) 92](export/administrar_y_monitorizar_el_sistema_en_la_central/bus_de_integracion_esb.md)
+[6.3.Bus de Integración (ESB) 92](export/administrar_y_monitorizar_el_sistema_en_la_central/bus_de_integracion_esb.md)
 
 [7.MONITORIZACIÓN DEL SINCRONIZADOR DE TIENDAS 93](export/monitorizacion_del_sincronizador_de_tiendas/README.md)
 
@@ -218,13 +210,12 @@ Tabla de contenidos
 | --- |
 | Versión | Autor | Descripción | Fecha |
 | 1.0 | MJLC | Versión Inicial |  |
-| 2.0 | MJLC | Inclusión de Mantenimiento de categorías de etiquetas | 15\/06\/2015 |
-| 3.0 | MJLC | Eliminado del punto 5 del manual el tipo de sincronización Manual. | 17\/09\/2015 |
-| 4.0 | MJLC | Inclusión de Apdo 9.2 Configuración del InStoreEngine orientado a la fase de implantación y mantenimiento del ISE | 19\/01\/2016 |
-| 5.0 | MJLC | Modificación ubicación “Mantenimiento de Categorías de Etiquetas” a Apdo 4.3 General. | 28\/04\/2016 |
+| 2.0 | MJLC | Inclusión de Mantenimiento de categorías de etiquetas | 15/06/2015 |
+| 3.0 | MJLC | Eliminado del punto 5 del manual el tipo de sincronización Manual. | 17/09/2015 |
+| 4.0 | MJLC | Inclusión de Apdo 9.2 Configuración del InStoreEngine orientado a la fase de implantación y mantenimiento del ISE | 19/01/2016 |
+| 5.0 | MJLC | Modificación ubicación “Mantenimiento de Categorías de Etiquetas” a Apdo 4.3 General. | 28/04/2016 |
 
 | Control de aprobaciones |
 | --- |
-| Aprobado por | Entidad\/Departamento | Fecha |
+| Aprobado por | Entidad/Departamento | Fecha |
 |  |  |  |
-

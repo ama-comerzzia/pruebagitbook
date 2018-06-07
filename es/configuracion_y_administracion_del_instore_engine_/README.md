@@ -1,0 +1,5 @@
+# CONFIGURACIÓN Y ADMINISTRACIÓN DEL INSTORE ENGINE EN TIENDA {#configuraci-n-y-administraci-n-del-instore-engine-en-tienda}
+
+En las **tiendas con sincronización OFF-LINE remota**, estará instalado el ISE, que se ejecutará en la propia tienda para la comunicación con la central. Esta aplicación se encarga de consultar y aplicar las actualizaciones que desde la central hayan sido preparadas para ejecutarse sobre dicha tienda, así como de enviar a la central desde la tienda, información generada por ésta, como pueden ser documentos generados o cierres de caja. Esto es, el ISE actúa de intermediario entre la central y la tienda.
+
+Por el contrario, las tiendas OFF-LINE Sincronización Centralizada y ON-LINE no requieren ISE por conectarse directamente con la central mediante los trabajos del sincronizador de tiendas, en el primero de los casos y por no requerir sincronización con la central, en el segundo de los casos.
