@@ -1,276 +1,207 @@
-Tabla de contenidos
+# INTRODUCCIÓN
 
-[[1.] [INTRODUCCIÓN] 8][\
-INTRODUCCIÓN]
+## Acerca de este manual
 
-[[1.1.] [Acerca de este manual] 8][Acerca de este manual]
+Este manual proporciona una Guía para el Usuario del BACKOFFICE del sistema comerzzia detallándose las funcionalidades de la aplicación. Los lectores no requieren ningún conocimiento acerca de programación ni desarrollo de software.
 
-[[1.2.] [Qué hay de nuevo en el manual de usuario 4.0] 8][Qué hay de nuevo en el manual de usuario 4.0]
+## Qué hay de nuevo en el manual de usuario 4.0
 
-[[1.3.] [Documentación relacionada] 8][Documentación relacionada]
+  - Reestructuración de menús.
 
-[[2.] [CONFIGURACIÓN GENERAL] 8][CONFIGURACIÓN GENERAL]
+  - Configuración de Tipos de Servicios, Calendarios de servicios y Consulta de servicios.
 
-[[2.1.] [Asistente de Configuración de Empresa] 8][Asistente de Configuración de Empresa]
+  - Nuevo punto de menú para Importación masiva de etiquetas.
 
-[[2.2.] [Configuración de la Empresa] 12][Configuración de la Empresa]
+  - Nuevos mantenimientos asociados a preparaciones y Artículos: Mantenimiento de Unidades de Medida, Preferencias de sustitución en pedidos, Tipos de Embalaje.
 
-[[2.2.1.] [Cambiar Logotipo] 12][Cambiar Logotipo]
+  - Incorporación de mejoras en el Mantenimiento de Tiendas y configuración de servicios asociados.
 
-[[2.3.] [Configuración de los parámetros del Sistema] 13][Configuración de los parámetros del Sistema]
+  - Mejoras en la Gestión de solicitudes y mantenimientos asociados.
 
-[[2.3.1.] [Variables configurables: Artículos] 13][Variables configurables: Artículos]
+## Documentación relacionada
 
-[[2.3.2.] [Variables configurables: Tarifas] 14][Variables configurables: Tarifas]
+  - Guía de Navegación comerzzia
 
-[[2.3.3.] [Variables configurables: TPV] 15][Variables configurables: TPV]
+  - COM\_ADM\_GUÍA DE IMPLANTACIÓN, PARAMETRIZACIÓN Y PERSONALIZACIÓN
 
-[[2.3.4.] [Variables configurables: Servicios REST] 16][Variables configurables: Servicios REST ]
+  - COM\_INS\_MANUAL DE INSTALACIÓN EN TIENDA
 
-[[2.4.] [Mantenimiento de Sitios] 16][Mantenimiento de Sitios]
+  - COM\_USR\_MANUAL DEL POS JAVA
 
-[[2.5.] [Configuración de Ayudas] 21][Configuración de Ayudas]
+# CONFIGURACIÓN GENERAL
 
-[[2.6.] [Configuración de Menús] 22][Configuración de Menús]
+## Asistente de Configuración de Empresa
 
-[[3.] [SEGURIDAD - PERMISOS] 23][SEGURIDAD - PERMISOS]
+El backoffice de comerzzia dispone de un Asistente de Configuración de la Empresa, que se ejecuta de forma automática en caso de detectar que tal configuración no está implementada en el sistema. Para configurar una empresa se sigue un proceso secuencial que facilita el registro de una empresa paso a paso.
 
-[[3.1.] [Mantenimiento de Perfiles] ![C:\\Users\\tier1\\AppData\\Local\\Microsoft\\Windows\\INetCache\\Content.Word\\perfiles.gif] 23][Mantenimiento de Perfiles ![C:\\Users\\tier1\\AppData\\Local\\Microsoft\\Windows\\INetCache\\Content.Word\\perfiles.gif]]
+1)  Selección del tipo de parametrización de la empresa que se va a dar de alta:
 
-[[3.2.] [Mantenimiento de Usuarios] ![][1] 24][Mantenimiento de Usuarios ![][1]]
+<!-- end list -->
 
-[[3.2.1.] [Listado de Usuarios] 25][Listado de Usuarios]
+  - **Multiempresa:** Configuración destinada a empresas que, por su volumen de facturación, esté conformada por un conjunto de sociedades. Bajo esta configuración se parametrizarán el conjunto de empresas y todas compartirán los mismos datos de clientes, artículos y datos de tablas maestras.
 
-[[3.2.2.] [Atributos de Usuario] 25][Atributos de Usuario]
+  - **Multiactividad:** Configuración destinada a empresas que, debido a que sus actividades están enfocadas en diferentes áreas (ejemplo, fabricación, distribución. etc...) crean sociedades diferentes para cada propósito. En este caso, se parametrizarán el conjunto de empresas pero no compartirán los mismos datos de clientes, artículos y datos de tablas maestras.
 
-[[3.2.3.] [Alta / Edición / Consulta de un Usuario] 27][Alta / Edición / Consulta de un Usuario]
+![](/media/image2.png)
 
-[[3.2.4.] [Restablecer contraseña] 27][Restablecer contraseña]
+2)  Datos de la empresa: Los datos de la empresa a registrar en comerzzia son:
+    
+      - Código: Código identificativo de la empresa de 4 dígitos numéricos.
+    
+      - Descripción: Nombre de la empresa.
+    
+      - Domicilio: Domicilio fiscal de la empresa.
+    
+      - Población: Localidad.
+    
+      - Provincia: Provincia.
+    
+      - CP: Código Postal.
+    
+      - CIF: Código de Identificación Fiscal de la empresa.
+    
+      - Teléfono 1: Teléfono de contacto.
+    
+      - Teléfono 2: Teléfono de contacto alternativo.
+    
+      - Fax: Número de fax.
+    
+      - Registro Mercantil.
 
-[[3.2.5.] [Baja de un Usuario] 28][Baja de un Usuario]
+![](/media/image3.png)
 
-[[3.3.] [Configuración de Permisos] 28][Configuración de Permisos]
+3)  Selección de logo de la empresa. Se permite subir una imagen y que quede establecida como logotipo de la empresa.
 
-[[3.3.1.] [Consultar Mis Permisos] 28][Consultar Mis Permisos]
+![](/media/image4.png)
 
-[[3.3.2.] [Administrar Permisos] 29][Administrar Permisos]
+Datos del almacén central: Para toda empresa que se registra se debe establecer una central. Por defecto al almacén central se le asigna el código y el país de registro de la empresa, y la descripción “ALMACÉN CENTRAL”. Además existe un check para marcar si el almacén central es además una tienda.
 
-[[4.] [GESTIÓN DE DATOS MAESTROS] 29][GESTIÓN DE DATOS MAESTROS]
+  - Código: Código identificativo de 4 dígitos numéricos.
 
-[[4.1.] [General] 29][General]
+  - Descripción: Nombre del Almacén.
 
-[[4.1.1.] [Mantenimiento de Series] 29][Mantenimiento de Series ![][2]]
+  - Domicilio, Población, Provincia, Código Postal: correspondientes a la ubicación física del almacén.
 
-[[4.1.2.] [Mantenimiento de Países] ![][3] 30][Mantenimiento de Países ![][3]]
+  - Teléfonos y Fax.
 
-[[4.1.3.] [Mantenimiento de Códigos Postales] ![C:\\Users\\tier1\\AppData\\Local\\Microsoft\\Windows\\INetCache\\Content.Word\\mantenimiento-codigopostal.gif] 32][Mantenimiento de Códigos Postales ![C:\\Users\\tier1\\AppData\\Local\\Microsoft\\Windows\\INetCache\\Content.Word\\mantenimiento-codigopostal.gif]]
+  - Persona de Contacto.
 
-[[4.1.4.] [Mantenimiento de Divisas] 33][Mantenimiento de Divisas![][4]]
+Si se marca el Almacén como “Este Almacén es una Tienda”, el asistente dará de alta la **TIENDA** del tipo “ON-LINE” con el mismo código que el almacén central.
 
-[[4.1.5.] [Mantenimiento de Categorías de Etiquetas] 34][Mantenimiento de Categorías de Etiquetas]
+![](/media/image5.png)
 
-[[4.1.6.] [Mantenimiento de Etiquetas] 35][Mantenimiento de Etiquetas]
+4)  Datos del cliente: Se registra un cliente por defecto al que se le asignarán las ventas.
 
-[[4.1.7.] [Funcionalidad de Importación masiva de etiquetas] ![][5] 37][Funcionalidad de Importación masiva de etiquetas ![][5]]
+![](/media/image6.png)
 
-[[4.1.8.] [Mantenimiento de Tipos de Solicitudes] ![C:\\Users\\tier1\\AppData\\Local\\Microsoft\\Windows\\INetCache\\Content.Word\\mantinimientoTipoSolicitudes.gif] 38][Mantenimiento de Tipos de Solicitudes ![C:\\Users\\tier1\\AppData\\Local\\Microsoft\\Windows\\INetCache\\Content.Word\\mantinimientoTipoSolicitudes.gif]]
+## Configuración de la Empresa
 
-[[4.2.] [Configuración de Impuestos] 39][Configuración de Impuestos]
+En esta opción de menú podemos especificar los datos generales de nuestra empresa, así como la imagen (logo) corporativa.
 
-[[4.2.1.] [Mantenimiento de Tipos de Impuestos] 39][Mantenimiento de Tipos de Impuestos ![][6]]
+![](/media/image7.png)
 
-[[4.2.2.] [Mantenimiento de Tratamiento de Impuestos] ![][7] 40][Mantenimiento de Tratamiento de Impuestos ![][7]]
+Los datos de la empresa registrados en comerzzia son:
 
-[[4.2.3.] [Mantenimiento de Cuadro de Impuestos] ![][8] 41][Mantenimiento de Cuadro de Impuestos ![][8]]
+  - Código: Código identificativo de la empresa. 4 dígitos numéricos (0000)
 
-[[4.2.4.] [\[PORTUGAL\] Comunicación Anual de las facturas emitidas (SAFT-PT)] ![][9] 42][\[PORTUGAL\] Comunicación Anual de las facturas emitidas (SAFT-PT) ![][9]]
+  - Descripción: Nombre de la empresa
 
-[[4.2.5.] [\[PORTUGAL\] Comunicación Mensual de las facturas emitidas (SAFT-PT)] ![][9] 43][\[PORTUGAL\] Comunicación Mensual de las facturas emitidas (SAFT-PT) ![][9]]
+  - Domicilio: Domicilio fiscal de la empresa
 
-[[4.3.] [Configuración de la Tesorería] 43][Configuración de la Tesorería]
+  - Población: Localidad
 
-[[4.3.1.] [Mantenimiento de Bancos] ![][10] 43][Mantenimiento de Bancos ![][10]]
+  - Provincia: Provincia
 
-[[4.3.2.] [Mantenimiento de Tipos de Efectos] ![][11] 45][Mantenimiento de Tipos de Efectos ![][11]]
+  - CP: Código Postal
 
-[[4.3.3.] [Mantenimiento de Conceptos de movimientos de caja] ![C:\\Users\\tier1\\AppData\\Local\\Microsoft\\Windows\\INetCache\\Content.Word\\conceptosMovimentosCaja.png] 47][Mantenimiento de Conceptos de movimientos de caja ![C:\\Users\\tier1\\AppData\\Local\\Microsoft\\Windows\\INetCache\\Content.Word\\conceptosMovimentosCaja.png]]
+  - CIF: CIF de la empresa
 
-[[4.3.4.] [Mantenimiento de Medios de Pago] ![][12] 48][Mantenimiento de Medios de Pago ![][12]]
+  - Teléfono 1: Teléfono de contacto
 
-[[4.3.5.] [Configuración en comerzzia para el uso de tarjetas de regalo] 51][Configuración en comerzzia para el uso de tarjetas de regalo]
+  - Teléfono 2: Teléfono de contacto alternativo
 
-[[4.4.] [Configuración de Artículos] 53][Configuración de Artículos]
+  - Fax: Número de fax
 
-[[4.4.1.] [Mantenimiento de Familias] 53][Mantenimiento de Familias ![][13]]
+  - Registro Mercantil.
 
-[[4.4.2.] [Mantenimiento de Categorizaciones] ![][14] 55][Mantenimiento de Categorizaciones ![][14]]
+### Cambiar Logotipo
 
-[[4.4.3.] [Mantenimiento de Secciones] ![][15] 57][Mantenimiento de Secciones ![][15]]
+Tenemos la posibilidad, desde esta pantalla, de cambiar el logo corporativo
 
-[[4.4.4.] [Mantenimiento de Marcas] 58][Mantenimiento de Marcas]
+![](/media/image8.png)
 
-[[4.4.5.] [Mantenimiento de Artículos] ![][16] 59][Mantenimiento de Artículos ![][16]]
+![](/media/image9.png)
 
-[[4.4.6.] [Mantenimiento de Productos] 72][Mantenimiento de Productos ![][17]]
+## Configuración de los parámetros del Sistema
 
-[[4.4.7.] [Mantenimiento de Unidades de Medida] 75][Mantenimiento de Unidades de Medida ![][18]]
+Se trata de una pantalla de Administración de variables internas del sistema, que nos permitirá definir una configuración personalizada para nuestro sistema:
 
-[[4.4.8.] [Mantenimiento de Unidades de Medida de Etiquetas] ![][19] 75][Mantenimiento de Unidades de Medida de Etiquetas ![][19]]
+![](/media/image10.png)
 
-[[4.4.9.] [Preferencia de Sustitución en Pedidos] 77][Preferencia de Sustitución en Pedidos ![][20]]
+A continuación se detallan las variables configurables en el sistema:
 
-[[4.4.10.] [Mantenimiento de Tipos de Embalaje] 78][Mantenimiento de Tipos de Embalaje ![][21]]
+### Variables configurables: Artículos
 
-[[4.5.] [Configuración de Almacenes] 79][Configuración de Almacenes]
+![](/media/image11.png)
 
-[[4.5.1.] [Mantenimiento de Tipos de Servicios] 79][Mantenimiento de Tipos de Servicios]
+  - “Título para el primer desglose en almacén”.
 
-[[4.5.2.] [Calendarios de Servicios] ![C:\\Users\\tier1\\AppData\\Local\\Microsoft\\Windows\\INetCache\\Content.Word\\actualizacion.gif] 81][Calendarios de Servicios ![C:\\Users\\tier1\\AppData\\Local\\Microsoft\\Windows\\INetCache\\Content.Word\\actualizacion.gif]]
+  - “Título para el segundo desglose en almacén”.
 
-[[4.5.3.] [Mantenimiento de Tipos de Portes] 83][Mantenimiento de Tipos de Portes ![][22]]
+  - "Formato de los códigos de barras aleatorios".
 
-[[4.5.4.] [Mantenimiento de Almacenes] ![][23] 84][Mantenimiento de Almacenes ![][23]]
+Los dos “niveles de desglose” son opcionales (Talla y Color para el ejemplo representado) y, en caso de decidir usarlos, son los nombres que dinámicamente recogerán las pantallas del sistema.
 
-[[4.5.5.] [Mantenimiento de Tiendas] ![][24] 86][Mantenimiento de Tiendas ![][24]]
+El formato de los códigos de barras aleatorios puede ser EAN13 o EAN18 (este último es el valor por defecto); los códigos de barras generados de forma aleatoria en el mantenimiento de artículos tendrán un formato u otro según la opción seleccionada.
 
-[[4.5.6.] [Mantenimiento de Grupos de tiendas] 95][Mantenimiento de Grupos de tiendas ![][25]]
+![](/media/image12.png)
 
-[[4.5.7.] [Mantenimiento de Conceptos de Almacenes Regularización] ![][26] 97][Mantenimiento de Conceptos de Almacenes Regularización ![][26]]
+### Variables configurables: Tarifas
 
-[[4.5.8.] [Mantenimiento de Conceptos de Almacenes para Ventas] ![][27] 98][Mantenimiento de Conceptos de Almacenes para Ventas ![][27]]
+![](/media/image13.png)
 
-[[4.5.9.] [Mantenimiento de Conceptos de Almacenes para Compras] ![][28] 100][Mantenimiento de Conceptos de Almacenes para Compras ![][28]]
+  - Primer nivel de redondeo de tarifas. Desde/Hasta/Valor
 
-[[4.5.10.] [Mantenimiento de Tipos de Contacto] 102][Mantenimiento de Tipos de Contacto ![][29]]
+  - Segundo nivel de redondeo de tarifas. Desde/Hasta/Valor
 
-[[4.5.11.] [Consultar los Servicios] 104][Consultar los Servicios]
+  - Tercer nivel de redondeo de tarifas. Desde/Hasta/Valor
 
-[[4.5.12.] [Subida manual de documentos] ![][30] 108][Subida manual de documentos ![][30]]
+Con estos parámetros se establece una **forma opcional de hacer redondeo**, sobre las dos primeras posiciones decimales de los precios (PVP+impuestos) en tarifa, en el proceso de “Actualización masiva de Artículos en la Tarifa”, descrito en apartado posterior de este manual, específico de proceso de Ventas y gestión de Tarifas.
 
-[[4.6.] [Configuración de Terceros (Clientes-Proveedores)] 109][Configuración de Terceros (Clientes-Proveedores)]
+Como podemos observar se establecen rango de valores desde/hasta y valor asignado para la posición decimal correspondiente.
 
-[[4.6.1.] [Mantenimiento de Sectores] ![][31] 109][Mantenimiento de Sectores ![][31]]
+### Variables configurables: TPV
 
-[[4.6.2.] [Mantenimiento de Clientes] ![][32] 110][Mantenimiento de Clientes ![][32]]
+![](/media/image14.png)
 
-[[4.6.3.] [Mantenimiento de Tarifas] 114][Mantenimiento de Tarifas]
+  - “Uso de descuentos en líneas para los tickets realizados por el POS”: es posible activar esta posibilidad de aplicar descuento a nivel de línea de detalle en los documentos de venta.
 
-[[4.6.4.] [Mantenimiento de Promociones] 115][Mantenimiento de Promociones]
+  - “Realizar la venta de artículos con precio 0”: posibilidad de activar o desactivar la opción que permite vender artículos con precio 0.
 
-[[4.6.5.] [Mantenimiento de Canales de Venta] 115][Mantenimiento de Canales de Venta]
+  - “Permitir el cambio de precio en edición”: posibilidad de modificar el precio de los artículos desde la pantalla de edición de línea.
 
-[[4.6.6.] [Mantenimiento de Proveedores] ![][33] 117][Mantenimiento de Proveedores ![][33]]
+  - “Para finalizar una venta la fecha de apertura de caja deberá ser igual a la fecha del sistema: Permite incorporar un control más en el proceso de venta para no poder hacer ventas en día diferente al de apertura de la caja. En el caso de que exista un ticket aparcado o una venta en curso, sí se permitirá acceder a la pantalla de ventas.
 
-[[4.7.] [Configuración de Canales y Buzones] 121][Configuración de Canales y Buzones]
+  - “Realizar apertura automática de caja al entrar en las pantallas de venta”: Permite configurar la apertura automática de la caja al iniciar con el proceso de venta.
 
-[[4.7.1.] [Mantenimiento de Buzones] ![][34] 121][Mantenimiento de Buzones ![][34]]
+  - “Columna vendedor visible en la pantalla de ventas del POS”: Permite visualizar el vendedor asociado a cada línea de la pantalla de Ventas del POS.
 
-[[4.7.2.] [Mantenimiento de Plantilla de Buzones] ![][35] 122][Mantenimiento de Plantilla de Buzones ![][35]]
+  - “Aplicar promociones de precio antes que el resto, que se aplicarían sobre el precio promoción”: Permite configurar las promociones de forma que las promociones de precio de artículos se apliquen antes que el resto de promociones activas, aplicándolas a posteriori sobre el precio fijado en la promoción de precio y no sobre el de tarifa. Además, si se marca este campo, los artículos que tengan promociones de tipo “Precio/Puntos” se mostrarán en la tienda virtual con el precio sin promoción tachado, junto al precio con descuento.
 
-[[4.7.3.] [Mantenimiento de Canales] ![C:\\Users\\tier1\\AppData\\Local\\Microsoft\\Windows\\INetCache\\Content.Word\\canales.gif] 123][Mantenimiento de Canales ![C:\\Users\\tier1\\AppData\\Local\\Microsoft\\Windows\\INetCache\\Content.Word\\canales.gif]]
+  - "Número de reintentos para cerrar la caja con descuadres": Indicamos el número máximo de intentos que se permiten para poder cerrar la caja con descuadres.
 
-[[5.] [SINCRONIZACIÓN CENTRAL - TIENDAS] 124][SINCRONIZACIÓN CENTRAL - TIENDAS]
+  - “Tener en cuenta en las devoluciones las promociones menos ingreso del ticket origen”: Considerar, al hacer una devolución, el precio con promoción existente en el momento en que se hizo la compra.
 
-[[5.1.] [Métodos de sincronización] 125][ Métodos de sincronización]
+### Variables configurables: Servicios REST 
 
-[[5.1.1.] [Sincronización Offline Centralizada] 125][Sincronización Offline Centralizada]
+![](/media/image14.png)
 
-[[5.1.2.] [Sincronización Offline Remota] 126][Sincronización Offline Remota]
+Indica la clave de acceso a los servicios REST de comerzzia.
 
-[[5.1.3.] [Sincronización Offline Remota con POS Autónomo] 128][Sincronización Offline Remota con POS Autónomo]
+## Mantenimiento de Sitios
 
-[[6.] [ADMINISTRAR Y MONITORIZAR EL SISTEMA EN LA CENTRAL] 129][ADMINISTRAR Y MONITORIZAR EL SISTEMA EN LA CENTRAL]
+En comerzzia el concepto de sitio hace referencia a la configuración de un entorno, donde se definen las variables y opciones de configuración de una tienda virtual. Se incluye por tanto un mantenimiento de sitios que permite la gestión de dichas configuraciones. Este mantenimiento se encuentra en el menú **Sistemas -\> Empresa.**
 
-[[6.1.] [Administración del Sistema/Sincronizador/Procesador de Datos] 129][Administración del Sistema/Sincronizador/Procesador de Datos]
+Para consultar el listado de sitios disponibles se emplea un buscador que puede filtrar por código y por descripción.
 
-[[6.2.] [Estadísticas de uso] 131][Estadísticas de uso]
-
-[[6.3.] [Bus de Integración (ESB)] 132][Bus de Integración (ESB)]
-
-[[6.4.] [Eventos] 133][Eventos ![][36]]
-
-[[7.] [MONITORIZACIÓN DEL SINCRONIZADOR DE TIENDAS] 133][MONITORIZACIÓN DEL SINCRONIZADOR DE TIENDAS]
-
-[[7.1.] [Trabajos disponibles según tipo de sincronización de Tienda] 134][Trabajos disponibles según tipo de sincronización de Tienda]
-
-[[7.2.] [Trabajos de Sincronización Central - Tiendas] 135][Trabajos de Sincronización Central - Tiendas]
-
-[[7.2.1.] [Trabajo "Enviar Configuración"] 135][Trabajo "Enviar Configuración"]
-
-[[7.2.2.] [Trabajo "Enviar Artículos"] 135][Trabajo "Enviar Artículos"]
-
-[[7.2.1.] [Trabajo "Recibir Documentos"] 136][Trabajo "Recibir Documentos"]
-
-[[7.2.1.] [Trabajo "Recibir Cierres de Caja"] 136][Trabajo "Recibir Cierres de Caja"]
-
-[[7.2.2.] [Trabajo "Generar Actualización de Artículos"] 136][Trabajo "Generar Actualización de Artículos"]
-
-[[7.2.3.] [Trabajo "Generar Datos Configuración"] 136][Trabajo "Generar Datos Configuración"]
-
-[[7.3.] [Detalle de cada Interfaz disponible en el Sincronizador de Tiendas] 136][Detalle de cada Interfaz disponible en el Sincronizador de Tiendas]
-
-[[7.3.1.] [Listado de Trabajos de Sincronización: Vista Trabajos por Tipo] 137][Listado de Trabajos de Sincronización: Vista Trabajos por Tipo]
-
-[[7.3.2.] [Listado de Trabajos de Sincronización: Vista Trabajos por Tiendas] 139][Listado de Trabajos de Sincronización: Vista Trabajos por Tiendas]
-
-[[7.3.3.] [Listado de Trabajos de Sincronización: Vista Actualizaciones] 139][Listado de Trabajos de Sincronización: Vista Actualizaciones]
-
-[[7.3.4.] [Listado de Trabajos de Sincronización: Consulta de Trabajos] 140][Listado de Trabajos de Sincronización: Consulta de Trabajos]
-
-[[7.4.] [Mantenimiento de los Trabajos de Sincronización] 142][Mantenimiento de los Trabajos de Sincronización]
-
-[[7.4.1.] [Programación de ejecución de trabajos: "Ejecutar periódicamente"] 143][Programación de ejecución de trabajos: "Ejecutar periódicamente"]
-
-[[7.5.] [Procesamiento de Documentos] 143][ Procesamiento de Documentos]
-
-[[7.5.1.] [Qué supone el procesado de Documentos en comerzzia] 144][Qué supone el procesado de Documentos en comerzzia]
-
-[[7.5.2.] [Listado de Documentos pendientes de procesar] 146][Listado de Documentos pendientes de procesar]
-
-[[7.5.3.] [Listado de Tickets Procesados] 146][Listado de Tickets Procesados]
-
-[[7.5.4.] [Listado de Documentos Erróneos] 146][Listado de Documentos Erróneos]
-
-[[7.6.] [Actualización remota de Tiendas] 147][ Actualización remota de Tiendas]
-
-[[8.] [ADMINISTRACIÓN DEL GESTOR DE TIENDA] 149][ADMINISTRACIÓN DEL GESTOR DE TIENDA]
-
-[[9.] [CONFIGURACIÓN Y ADMINISTRACIÓN DEL INSTORE ENGINE EN TIENDA] 149][CONFIGURACIÓN Y ADMINISTRACIÓN DEL INSTORE ENGINE EN TIENDA]
-
-[[9.1.] [Proceso de Instalación] 150][Proceso de Instalación]
-
-[[9.2.] [Configuración del InStoreEngine] 150][Configuración del InStoreEngine]
-
-[[9.2.1.] [Ruta de trabajo] 150][Ruta de trabajo]
-
-[[9.2.2.] [Árbol de directorios] 150][Árbol de directorios]
-
-[[9.3.] [Funcionamiento del InStoreEngine] 155][Funcionamiento del InStoreEngine]
-
-+----------------------+-------+----------------------------------------------------------------------------------------------------------------------------------------------+------------+
-| Control de versiones |
-+======================+=======+==============================================================================================================================================+============+
-| Versión              | Autor | Descripción                                                                                                                                  | Fecha      |
-+----------------------+-------+----------------------------------------------------------------------------------------------------------------------------------------------+------------+
-| 1.0                  | MCG   | Versión Inicial                                                                                                                              | 18/11/2016 |
-+----------------------+-------+----------------------------------------------------------------------------------------------------------------------------------------------+------------+
-| 1.1                  | MCG   | Actualización del manual con la nueva organización de los menús                                                                              | 14/12/2016 |
-+----------------------+-------+----------------------------------------------------------------------------------------------------------------------------------------------+------------+
-| 1.2                  | MCG   | Funcionalidad importación masiva de etiquetas                                                                                                | 11/01/2017 |
-+----------------------+-------+----------------------------------------------------------------------------------------------------------------------------------------------+------------+
-| 1.3                  | MJLC  | Actualización información asociada al Apdo. 1.2, eliminación de información asociada a la pestaña "Imágenes" del Mantenimiento de Artículos. | 03/08/2017 |
-|                      |       |                                                                                                                                              |            |
-|                      |       | Añadido Apartado 4.4.5.2 Impresión de Informes asociados a Artículos                                                                         |            |
-+----------------------+-------+----------------------------------------------------------------------------------------------------------------------------------------------+------------+
-| 1.4                  | MCG   | Actualización lista de informes de cajas                                                                                                     | 03/10/2017 |
-+----------------------+-------+----------------------------------------------------------------------------------------------------------------------------------------------+------------+
-| 1.5                  | MJLC  | Actualizado puntos asociados a versión 4.0.4: 2.4 Mantenimiento de sitios, 4.5.11 Consultar los servicios, 4.5.2 Calendarios de servicios    | 07/11/2017 |
-+----------------------+-------+----------------------------------------------------------------------------------------------------------------------------------------------+------------+
-| 1.6                  | MJLC  | Actualizado puntos asociados a versión 4.0.5: 2.3.2 Variable de POS apertura de caja                                                         | 08/01/2018 |
-|                      |       |                                                                                                                                              |            |
-|                      |       | Aclaración Apdo 2.4: Modo avanzado de tienda                                                                                                 |            |
-+----------------------+-------+----------------------------------------------------------------------------------------------------------------------------------------------+------------+
-
-  Control de aprobaciones                          
-  ------------------------- ---------------------- -------
-  Aprobado por              Entidad/Departamento   Fecha
+![](/media/image15.png)
