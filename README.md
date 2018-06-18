@@ -1,5 +1,3 @@
-# Administracion {#administracion}
-
 # Languages
 
 * [English](en/)
@@ -7,6 +5,7 @@
 * [Español](es/)
 
 
+# Administracion {#administracion}
 Manual de Administración de comerzziaxxxxxxxxxxxxxxxxxxxxxx
 
 Tabla de contenidos
