@@ -7,10 +7,7 @@
 * [Español](es/)
 
 
-
-Manual de Administración
-
-de comerzziaxxxxxxxxxxxxxxxxxxxxxx
+Manual de Administración de comerzziaxxxxxxxxxxxxxxxxxxxxxx
 
 Tabla de contenidos
 
